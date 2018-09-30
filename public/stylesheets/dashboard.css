@@ -1,0 +1,84 @@
+body
+{
+  margin:0;
+  padding:0;
+}
+
+.user
+{
+  margin-top:20px;
+}
+
+#clickme
+{
+  float:right;
+}
+
+
+
+#user-profile
+{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+}
+
+#username
+{
+  margin:10px;
+}
+
+.active-item
+{
+  background-color:rgba(111, 118, 186);
+  border-radius:35px;
+  color:whitesmoke;
+  list-style: none;
+  text-decoration: none;
+  padding:10px;
+
+}
+
+
+#sidebar
+{
+  width:270px;
+  height:100vh; /* full screen */
+  background-color:rgba(169, 175, 227);
+  
+}
+
+
+.components
+{
+  font-size:20px;
+  margin:20px;
+  line-height:30px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+
+.deactive
+{
+  display:none;
+}
+
+
+.item
+{
+  margin:13px;
+  color: #e6e6e6;
+}
+
+.item:hover
+{
+  background-color:rgba(111, 118, 186,0.7);
+  border-radius:35px;
+  color:whitesmoke;
+  list-style: none;
+  text-decoration: none;
+  padding:10px;
+
+}
+
