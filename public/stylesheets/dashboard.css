@@ -1,4 +1,4 @@
-body
+body,html
 {
   margin:0;
   padding:0;
@@ -6,15 +6,14 @@ body
 
 .user
 {
-  margin-top:20px;
-}
-
-#clickme
-{
+  position:relative;
+  top:12px;
   float:right;
+  background-color:rgba(111, 118, 186,0.4);
+  border-radius: 30px; 
+  margin-right:10px;
+  color:#e6e6e6;
 }
-
-
 
 #user-profile
 {
@@ -25,8 +24,21 @@ body
 
 #username
 {
-  margin:10px;
+  margin:10px 20px 10px 10px;
 }
+
+
+#clickme
+{
+  border-radius: 50%;
+  background-color:rgba(111, 118, 186);
+  color:whitesmoke;
+  margin:10px 0 0 15px;
+}
+
+
+
+
 
 .active-item
 {
@@ -39,15 +51,27 @@ body
 
 }
 
+.item-deactivate
+{
+  display:none;
+}
 
-#sidebar
+.sidebar
 {
   width:270px;
   height:100vh; /* full screen */
   background-color:rgba(169, 175, 227);
-  
+  position:relative;
+  transition: 0.6s all;
+
 }
 
+.deactive
+{
+
+  width:60px;
+  transition: 0.6s all;
+}
 
 .components
 {
@@ -56,12 +80,6 @@ body
   line-height:30px;
   font-family: 'Quicksand', sans-serif;
 
-}
-
-
-.deactive
-{
-  display:none;
 }
 
 
@@ -79,6 +97,23 @@ body
   list-style: none;
   text-decoration: none;
   padding:10px;
+  transition: 0.2s all;
 
 }
+
+.brand /* to override the css of item class, brand is written after item class*/
+{
+  font-size:20px ;
+  margin: 30px ;
+  font-weight:100;
+  width:100%;
+
+}
+
+.brand:hover
+{
+  background-color:inherit;
+  
+}
+
 

@@ -22,27 +22,36 @@
  
 </head>
 	
-<button id="clickme"><i class="fa fa-bars"></i></button>
+
 
 	<div class="wrapper">
-		<nav id="sidebar">
-			
-			<ul class="components list-unstyled">
-				<div class="user">
+
+		<div class="user">
 					<img id="user-profile" src="../images/me.jpg" alt="user-profile">
-					<span id="username">Vishal Marhatta</span>
-				</div>
+					<span id="username">Vishal Marhatta
+						<i class="fa fa-chevron-down"></i>
+					</span>
+		</div>
+
+		<nav class="sidebar deactive">
+			<button id="clickme" ><i class="fa fa-bars"></i></button>
+			<span class="item item-deactivate brand">CodeBazaar</span>
+			<ul class="components list-unstyled">
+
 				<hr />
-				<li ><i class="fa fa-filter list-icon"></i><a href="#" class="item active-item">Browse&nbsp;Quizzes</a></li>
+				<li ><i class="fa fa-filter list-icon"></i><a href="#" class="item item-deactivate active-item">Browse&nbsp;Quizzes</a></li>
 				<hr />
-				<li><i class="fa fa-line-chart list-icon"></i><a href="#" class="item">My&nbsp;Performance</a></li>
+				<li><i class="fa fa-line-chart list-icon"></i><a href="#" class="item item-deactivate">My&nbsp;Performance</a></li>
 				<hr />
-				<li><i class="fa fa-comments-o list-icon"></i><a href="#" class="item"> Feedback</a></li>
+				<li><i class="fa fa-comments-o list-icon"></i><a href="#" class="item item-deactivate"> Feedback</a></li>
 				<hr />
-				<li><i class="fa fa-pencil list-icon"></i><a href="#" class="item">Forums</a></li>
+				<li><i class="fa fa-pencil list-icon"></i><a href="#" class="item item-deactivate">Forums</a></li>
 				<hr />
-				<li><i class="fa fa-phone list-icon"></i><a href="#" class="item"></i>Contact</a></li>
+				<li><i class="fa fa-phone list-icon"></i><a href="#" class="item item-deactivate"></i>Contact</a></li>
 			</ul>
+
+			
+
 		</nav>
 	
 </div>
