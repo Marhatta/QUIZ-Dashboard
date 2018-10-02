@@ -2,36 +2,24 @@
 <html>
 <head>
 	<title>quiz</title>
-
 	<link rel="stylesheet" type="text/css" href="../stylesheets/dashboard.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-
-
- 
 </head>
 	
-
-
+<body>
+<div class="col-md-12 row">
+<!--sidebar starts here -->
+<div class="col-md-1">
 	<div class="wrapper">
 
-		<div class="user">
-					<img id="user-profile" src="../images/me.jpg" alt="user-profile">
-					<span id="username">Vishal Marhatta
-						<i class="fa fa-chevron-down"></i>
-					</span>
-		</div>
+	<!--sidebar-->
 
 		<nav class="sidebar deactive">
 			<button id="clickme" ><i class="fa fa-bars"></i></button>
@@ -49,12 +37,79 @@
 				<hr />
 				<li><i class="fa fa-phone "></i><a href="#" class="item item-deactivate"></i>Contact</a></li>
 			</ul>
-
-			
-
 		</nav>
-	
+	</div>
 </div>
+<!--sidebar ends here-->
+
+<div class="col-md-11">
+	<div class="col-md-12 row">
+		<!--user name and photo-->
+		<div class="col-md-9"></div>
+		<div class="user col-md-3">
+			<img id="user-profile" src="../images/me.jpg" alt="user-profile">
+			<i class="fa fa-bell bell"></i>
+			<span class="badge badge-pill badge-danger notification">2</span> <!--number of notifications-->
+			<i class="fa fa-chevron-down"></i>
+		</div>
+	</div>
+	<!--upcoming quizzes -->
+	<div class="col-md-12 row">
+		<div class="col-md-8">
+		<% for(var i=0;i<4;i++) { %>
+			<div class="card upcoming-quizzes">
+				<span class="card-text">vishal</span>
+			</div>
+		<% } %>
+		</div>
+		
+		<div class="col-md-1"></div>
+		<!-- rewards-->
+		<div class="col-md-3">
+			<div class="card rewards">
+				<span class="card-text">rewards</span>
+			</div>
+		</div>
+	
+	</div>
+
+	<div class="col-md-12 row">
+		<!-- quizzes -->
+		<div class="col-md-8 horizontal-scroll">
+			<% for(var i=0;i<10;i++) { %>
+			<div class="quizzes">
+				<span>vishal</span>
+			</div>
+			<% } %>
+		</div>
+
+		<div class="col-md-1"></div>
+		<!-- leaderboard -->
+		<!--top 5 Students -->
+		<div class="col-md-3">
+			<div class="card leaderboard">
+				<span class="leaderboard-title"><i class=""></i>Leaderboard</span>
+				<i class="fa fa-trophy" id="trophy"></i> <!-- place trophy icon on 1st rank-->
+				<% for(i=0;i<5;i++) { %>
+				<div class="leaders">
+					<span class="leader-photo">
+						<img src="../images/me.jpg" class="leader-image"></span>
+					</span>
+					<span class="leader-name">Vishal Marhatta</span>
+					<span class="badge badge-danger badge-pill"><%=i+1%></span>
+					<span class="badge badge-primary">Profile</span>
+				</div>
+				<% } %>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</div>
+
+
+
 <body>
 
 

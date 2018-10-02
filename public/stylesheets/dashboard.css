@@ -1,33 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
 body,html
 {
   margin:0;
   padding:0;
 }
 
+
 .user
 {
-  position:relative;
-  top:12px;
-  float:right;
   background-color:rgba(111, 118, 186,0.4);
   border-radius: 30px; 
-  margin-right:10px;
-  color:#e6e6e6;
+  color:#f2f2f2;
+  margin-top:10px;
+  height:40px;
+  margin-right:-50px;
+
 }
 
 #user-profile
 {
-  width:50px;
-  height:50px;
+  width:40px;
+  height:40px;
   border-radius: 50%;
+  margin-left:-14px;
 }
 
-#username
+/* for notification */
+.bell
 {
-  margin:10px 20px 10px 10px;
+  font-size:30px;
+  margin:5px;
+}
+
+.notification
+{
+  position: relative;
+  right:15px;
+  bottom:8px;
+
 }
 
 
+/*sidebar*/
 #clickme
 {
   border-radius: 50%;
@@ -52,6 +69,13 @@ body,html
   display:none;
 }
 
+
+.wrapper
+{
+  margin-left:-20px;
+  
+}
+
 .sidebar
 {
   width:265px;
@@ -59,7 +83,8 @@ body,html
   background-color:rgba(169, 175, 227);
   position:relative;
   transition: 0.2s all;
-  margin:auto 0;
+  margin:0;
+  z-index:9999;
 
 }
 
@@ -99,10 +124,12 @@ body,html
 
 }
 
+/* sidebar css ends here*/
+
 .brand /* to override the css of item class, brand is written after item class*/
 {
   font-size:20px ;
-  margin: 30px ;
+  margin: 30px;
   font-weight:100;
   width:100%;
 
@@ -114,4 +141,93 @@ body,html
   
 }
 
+.upcoming-quizzes
+{
+  
+  width:200px;
+  height:100px;
+  display:inline-block;
+  float:left;
+  margin:10px;
+}
 
+.rewards
+{
+  margin-top:10px;
+  height:100px;
+  width:300px;
+}
+
+.quizzes
+{
+  display:inline-block;
+  margin:10px;
+  width:280px;
+  height:432px;
+  border:2px solid black;
+  
+}
+
+.horizontal-scroll
+{
+  overflow-x:scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling:touch;
+}
+
+
+/* leaderboard styles */
+
+.leaderboard-title
+{
+  text-align: center;
+  background-color:#6F82BA;
+  line-height:50px;
+  color: #f2f2f2;
+}
+
+.leaderboard
+{
+  height:432px;
+  width:300px;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+
+}
+
+.leaderboard:hover
+{
+  box-shadow: 0 0 16px rgba(33,33,33,.2);
+}
+
+.leaders
+{
+
+  border-bottom: 1px dashed grey;
+  padding:10px;
+}
+
+.leader-image
+{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+
+.leader-name
+{
+  font-family: 'Quicksand', sans-serif;
+  margin:10px;
+}
+
+#trophy
+{
+  font-size:25px;
+  color:gold;
+  position:relative;
+  top:30px;
+  left:50px;
+}
+
+
+/* leaderboard css ends here */
